@@ -1,26 +1,58 @@
 /* id = #
 class = . */
+.container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Inter', sans-serif;
+}
+
+#content {
+    order:2;
+    padding:5%;
+    font-family: 'Inter', sans-serif;
+    display:flex;
+    flex-direction: column;
+}
+
+.caption{
+    font-family: 'Inter';
+    font-size: 10px;
+    color:gray;
+}
+
+.heading {
+    font-family: 'Inter', sans-serif;
+}
+.heading h1 {
+    margin-bottom: 0px;
+}
+
+.subhead {
+    font-weight:bolder;
+}
+
 
 
 @media only screen and (max-width: 900px) { 
     .container {
+        display:flex;
         flex-direction: column;
-        flex-wrap: wrap-reverse;
+        justify-content: space-around;
         width: unset;
+        font-family: 'Inter', sans-serif;
     }
     #heading {
         order:2;
         padding:5%;
+        font-family: 'Inter', sans-serif;
     }
     #about{
         order:3;
-        display:flex;
-        padding:5%;
-
     }
     #profpic {
         order:1;
         padding:5%;
-
+        max-width: 100vw;
     }
 }
